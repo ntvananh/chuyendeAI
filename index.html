@@ -22,11 +22,20 @@ Error generating stack: `+u.message+`
 `),U=document.createElement("textarea");U.value=g,document.body.appendChild(U),U.select(),document.execCommand("copy"),document.body.removeChild(U),f("Đã sao chép danh sách link!"),setTimeout(()=>f(""),2500)},Su=Object.values(l).filter(Boolean).length,Au=Object.values(Kn).filter(Boolean).length,ji=K.useMemo(()=>{let g=Object.keys(l).sort((Y,L)=>Number(Y)-Number(L)).map((Y)=>{let ge=(l[Number(Y)]||"").replace(/"/g,"\\\"");return`  ${Y}: "${ge}",`}),U=O.replace(/"/g,"\\\""),$=s.replace(/"/g,"\\\"");return`// ===== SỬA LINK CỐ ĐỊNH Ở ĐÂY - GIÁO VIÊN SẼ THẤY NGAY =====
 // Copy toan bo khoi nay va thay vao file App.tsx trong repo
 // Tim "SỬA LINK CỐ ĐỊNH" de thay cho dan - sau do git push, giao vien se thay ngay
-const DEFAULT_CLASS_LINKS: Record<number, string> = {
-${g.join(`
-`)}
+const DEFAULT_CLASS_LINKS = {
+  1: "",  // Lớp 1
+  2: "",  // Lớp 2
+  3: "",  // Lớp 3
+  4: "",  // Lớp 4
+  5: "",  // Lớp 5
+  6: "",  // Lớp 6
+  7: "",  // Lớp 7
+  8: "",  // Lớp 8
+  9: "",  // Lớp 9
+  10: "", // Lớp 10
+  11: "", // Lớp 11
+  12: ""  // Lớp 12
 };
-
 const DEFAULT_COMMUNITY_LINKS = {
   facebook: "${U}",
   zalo: "${$}"
